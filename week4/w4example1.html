@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 4</title>
 </head>
+
 <body>
-    
+    <h1>Week 4: HTML Table</h1>
+    <table border="2" style="background-color: blueviolet; color: aliceblue;">
+        <caption>Student List (INFT1206)</caption>
+        <colgroup>
+            <col>
+            <col style="background-color: red;">
+            <col>
+        </colgroup>
+        <thead style="background-color: yellow; color: black;">
+            <tr>
+                <th scope="colgroup">NO</th>
+                <th scope="colgroup">Name</th>
+                <th scope="colgroup">PROGRAM</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Sam</td>
+                <td rowspan="2">IT</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Tom</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mia</td>
+                <td>Programming</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Prepared by: Ryan, Ryker, Ben</td>
+            </tr>
+            <tr>
+                <td>
+                    <table border="1" style="background-color: rgb(0, 238, 255); color: black;">
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
+
 </html>
