@@ -72,16 +72,17 @@ nav{
   top: 0px;
 }
 
-main article img{
+article img{
   float: left;
   padding-right: 10px;
 }
-main article{
-  float: left;
-  width: 50%;
+
+article{
+  display: table-cell;
+  width: 70%;
 }
-main aside{
-  float: right;
-  width: 50%;
-  columns: 2;
+
+aside{
+  display: table-cell;
+  width: 30%;
 }
