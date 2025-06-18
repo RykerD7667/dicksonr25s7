@@ -86,3 +86,10 @@ aside{
   display: table-cell;
   width: 30%;
 }
+
+
+aside ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1px;
+}
