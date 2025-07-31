@@ -1,3 +1,10 @@
+/*
+        Name: Ryker Dickson
+        Student Number: 100912565
+        File: main.js
+        Date: 31-07-2025
+        Description: assignment 4 part 2 tutorial file javascript
+*/
 const displayedImage = document.querySelector('.displayed-img');
 const thumbBar = document.querySelector('.thumb-bar');
 
