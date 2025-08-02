@@ -1,3 +1,11 @@
+/*
+        Name: Ryker Dickson
+        Student Number: 100912565
+        File: main.js
+        Date: 01-08-2025
+        Description: assignment 4 part 3 tutorial file javascript
+*/
+
 // setup canvas
 
 const canvas = document.querySelector("canvas");
