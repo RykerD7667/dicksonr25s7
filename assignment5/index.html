@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -11,7 +11,7 @@
         Description: assignment 5 index
     -->
   <title>Accessibility assessment</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet"
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300%7CSonsie+One" rel="stylesheet"
     type="text/css">
   <link rel="stylesheet" href="style.css">
 
@@ -22,11 +22,13 @@
 </head>
 
 <body>
+  <!--Allows the user to skip to the main content (other accessibility feature 1)-->
+  <a href="#main" class="sr-only sr-only-focusable">Skip to main content</a>
   <div class="header">
     <h1>Welcome to our wildlife website</h1>
   </div>
-
-  <nav class="nav">
+  <!--ARIA landmarks for better screen reader navigation (other accessibility feature 2)-->
+  <nav class="nav" aria-label="Main site navigation">
     <ul>
       <li><a href="#">Home</a></li>
       <li><a href="#">Our team</a></li>
@@ -41,7 +43,7 @@
     </form>
   </nav>
 
-  <main>
+  <main id="main">
     <article>
       <h2>The trouble with Bears</h2>
       <br><br>
@@ -64,14 +66,15 @@
       out below. The below table also gives you some useful facts about bears.
       <br><br>
       <table>
+        <caption>Comparison of wild and urban bear characteristics</caption>
         <thead>
           <tr>
-            <td>Bear Type</td>
-            <td>Coat</td>
-            <td>Adult size</td>
-            <td>Habitat</td>
-            <td>Lifespan</td>
-            <td>Diet</td>
+            <th scope="col">Bear Type</th>
+            <th scope="col">Coat</th>
+            <th scope="col">Adult size</th>
+            <th scope="col">Habitat</th>
+            <th scope="col">Lifespan</th>
+            <th scope="col">Diet</th>
           </tr>
         </thead>
         <tbody>
@@ -142,9 +145,9 @@
 
       </aside>
       <section class="comments">
-        <div class="show-hide">Show comments</div>
+        <button class="show-hide" aria-expanded="false" aria-controls="comments">Show comments</button>
 
-        <div class="comment-wrapper">
+        <div class="comment-wrapper" id="comments">
 
           <h2>Add comment</h2>
 

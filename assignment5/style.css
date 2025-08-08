@@ -268,3 +268,14 @@ audio {
   overflow: hidden;
 }
 
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 1rem;
+  clip: auto;
+  overflow: visible;
+}
+
+
