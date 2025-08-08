@@ -1,3 +1,11 @@
+/*
+        Name: Ryker Dickson
+        Student Number: 100912565
+        File: main.js
+        Date: 08-08-2025
+        Description: assignment 5 javascript
+*/
+
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
