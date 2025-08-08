@@ -203,6 +203,7 @@ audio {
 
 .comment-form .flex-pair {
   display: flex;
+  align-items: center;
   padding: 0 3rem 1rem;
 }
 
